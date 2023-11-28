@@ -14,5 +14,23 @@ const print10 = function(){
     console.log('print10', 10);
 }
 
-// when we have a expretion function we can't declarre function befoure  initialization
-// print 10 give you an console.error  
+
+
+
+function foo(){
+    if(true){
+        var fruit1 = 'apple';        //exist in function scope
+        const fruit2 = 'banana';     //exist in block scope
+        let fruit3 = 'strawberry';   //exist in block scope
+
+    }
+    console.log(fruit1);
+    console.log(fruit2);
+    console.log(fruit3);
+}
+
+foo();
+//result:
+//apple
+//error: fruit2 is not defined
+//error: fruit3 is not defined
