@@ -59,17 +59,20 @@ const add = (a, b) => {
 };
 
 // console.log(add(10,16));
- 
+
 // problem - 4
 
 const array = [5, 6, 3, 7, 8];
-const newArray = []
-const arrayResult = array.map((i) =>{
-    // console.log(i);
-    let div = i/7
-   
-    
-    newArray.push(Number(div.toFixed(2)))
-})
-console.log(newArray);
+const newArray = [];
+const arrayResult = array.map((i) => {
+  // console.log(i);
+  let div = i / 7;
 
+  newArray.push(Number(div.toFixed(2)));
+});
+// console.log(newArray);
+
+// problem 6 
+const[a,c,b]= [23, 3, 4, 6, 7];
+const balance = c
+console.log(balance);
